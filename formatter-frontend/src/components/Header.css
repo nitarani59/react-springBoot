@@ -1,0 +1,119 @@
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.navbar a {
+    text-decoration:solid; /* Remove underline */
+    padding: 10px 15px; /* Padding around the links */
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(71, 89, 189); /* Text color */
+}
+
+.nav-item {
+    font-weight: bold;
+    color: rgb(71, 89, 189); /* Text color */
+}
+/* Container to hold the button */
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* This moves the button to the extreme right */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Styling the button */
+  .button {
+    background-color: rgb(71, 89, 189); /* Green background */
+    border: none; /* Remove default border */
+    color: white; /* White text */
+    padding: 8px 20px; /* Padding for a nice size */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: flex; /* Display inline block */
+    font-weight: bolder; /* Increase font size */
+    margin: 2px 2px; /* Small margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .button:hover {
+    background-color: rgb(71, 89, 189); /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    display: flex; /* Flexbox for centering */
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 400px; /* Maximum width */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Center content */
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+button[type=submit] {
+    background-color: rgb(71, 89, 189);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+}
+
+button[type=submit]:hover {
+    background-color: #5761a9;
+}
+  

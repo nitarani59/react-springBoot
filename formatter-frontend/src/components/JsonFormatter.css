@@ -1,0 +1,16 @@
+
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.input-box {
+  width: 90%;
+  height: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}

@@ -1,0 +1,56 @@
+body {
+    background-image: url('images/drew-beamer-kUHfMW8awpE-unsplash.jpg');
+    background-size: cover;
+    /* Cover the entire container */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    height: 100vh;
+    /* Full viewport height */
+    width: 100%;
+    /* Full width */
+    margin-left: '5%';
+}
+
+.row {
+    margin-top: 30px;
+    /* top margin */
+    margin-right: 30px;
+    /* right margin */
+    margin-bottom: 30px;
+    /* bottom margin */
+    margin-left: 50px;
+    /* left margin */
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card {
+    cursor: pointer;
+
+}
+
+.card-text {
+    padding-top: 5%;
+    transition: background-color 0.1s, color 0.1s ease, transform 0.1s ease;
+    /* Smooth transition */
+}
+
+.card:hover {
+    background-color: #ebeef0;
+    /* Change to a blue background */
+    transform: scale(1.1);
+    /* Increase the size of the card */
+}
+
+.title {
+    text-align:center;
+    color: 'black';
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 1%;
+}
