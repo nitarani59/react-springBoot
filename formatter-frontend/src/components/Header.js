@@ -1,17 +1,27 @@
-// Example: src/index.js or src/App.js
+
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "./Header.css"
 
 function Header() {
+    const navigate = useNavigate();
     const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+
+    const openLoginModal = (event) => {
+        setIsLoginModalOpen(true);
+        navigate('/login')
+    }
+    const closeLoginModal = () => setIsLoginModalOpen(false);
+
     const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false);
 
-    const openLoginModal = () => setIsLoginModalOpen(true);
-    const closeLoginModal = () => setIsLoginModalOpen(false);
-    const openSignUpModal = () => setIsSignUpModalOpen(true);
+    const openSignUpModal = () => {
+        setIsSignUpModalOpen(true);
+        navigate('/signup')
+    }
     const closeSignUpModal = () => setIsSignUpModalOpen(false);
     return (
         <nav className="navbar navbar-expand-lg navbar navbar-light bg-light">
@@ -52,7 +62,6 @@ function Header() {
                     </div>
                 </div>
             )}
-
             {isSignUpModalOpen && (
                 <div className="modal" onClick={closeSignUpModal}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
